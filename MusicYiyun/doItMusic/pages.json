@@ -1,0 +1,170 @@
+{
+	"pages": [ 
+		{
+			"path": "pages/home/index",
+			"navigationBarTextStyle": "white",
+			"style": {
+				"navigationBarTitleText": "doItMusic",
+				"h5": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path" : "pages/my/index",
+			"style" : {
+			  "navigationBarTitleText": "我的",
+			  "h5": {
+			  	"titleNView": false
+			  }
+			}
+		},
+		{
+			"path" : "pages/hot/index",
+			"style" : {
+			  "navigationBarTitleText": "热门",
+			  "h5": {
+			  	"titleNView": false
+			  }
+			}
+		},
+
+		{
+			"path" : "pages/more/index",
+			"style" : {
+			  "navigationBarTitleText": "更多",
+			  "h5": {
+			  	"titleNView": false
+			  }
+			}
+		},
+
+		{
+            "path" : "pages/webBrowser/webBrowser",
+            "style" : {
+				"h5": {
+					"titleNView": false
+				}
+			}
+        },
+
+		{
+            "path" : "pages/searchPage/searchPage",
+            "style" : {
+				"navigationStyle": "custom" ,
+				"navigationBarTitleText": "搜索",
+				"h5": {
+					"titleNView": false
+				}
+			}
+        },
+
+		{
+            "path" : "pages/searchPage/searchResult",
+            "style" : {
+				"navigationStyle": "custom" ,
+				"navigationBarTitleText": "搜索",
+				"h5": {
+					"titleNView": false
+				}
+			}
+        },	
+		{
+            "path" : "pages/playMusicPage/playMusicPage",
+            "style" : {
+				"navigationStyle": "custom" ,
+				"navigationBarTitleText": "音乐",
+				"h5": {
+					"titleNView": false
+				}
+			}
+        },
+
+		{
+            "path" : "pages/artistPage/artistPage",
+            "style" : {
+				"navigationStyle": "custom" ,
+				"navigationBarTitleText": "歌手",
+				"h5": {
+					"titleNView": false
+				}
+			}
+        },
+
+		{
+            "path" : "pages/playlistPage/playlistPage",
+            "style" : {
+				"navigationStyle": "custom" ,
+				"navigationBarTitleText": "歌单",
+				"h5": {
+					"titleNView": false
+				}
+			}
+        },
+
+		{
+            "path" : "pages/playVideoPage/playVideoPage",
+            "style" : {
+				"navigationStyle": "custom" ,
+				"navigationBarTitleText": "视频",
+				"h5": {
+					"titleNView": false
+				}
+			}
+        }
+    ],
+
+	"tabBar": {
+		"color":"#8a8a8a",
+		"selectedColor":"#e51419",
+		"borderStyle":"black",
+		"backgroundColor":"#ffffff",
+		"list": [
+			{
+				"pagePath":"pages/hot/index",
+				"text":"热门",
+				"iconPath":"static/image/tabbar/hot.png",
+				"selectedIconPath":"static/image/tabbar/hot-active.png"
+			},
+			{
+				"pagePath":"pages/home/index",
+				"text":"首页",
+				"iconPath":"/static/image/logo-plain.png",
+				"selectedIconPath":"/static/image/logo-plain.png"
+			},
+			{
+				"pagePath":"pages/my/index",
+				"text":"我的",
+				"iconPath":"static/image/tabbar/user.png",
+				"selectedIconPath":"static/image/tabbar/user-active.png"
+			}
+		]	
+	 },
+
+	"easycom": {
+	  "autoscan": true,
+	  "^sq-(.*)": "@/components/sq/sq-$1.vue", 
+	  "^q-(.*)": "@/components/q/$1/q-$1.vue",
+	  "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue" 
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle": "custom"
+	},
+	"app-plus": {    
+		"nvueCompiler":"uni-app" 
+	},
+	"condition" : { 
+		"current": 0, 
+		"list": [
+			{
+				"name": "", 
+				"path": "", 
+				"query": "" 
+			}
+		]
+	}   
+}
